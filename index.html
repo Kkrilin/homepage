@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          class="web-log"
+          src="./assets/images/logo.svg"
+          alt="website logo"
+        />
+        <ul class="nav-links nav-links-2 nav-2-hidden">
+          <li class="nav-link"><a class="nav-item" href="#">Home</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">New</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">Popular</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">Trending</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">Categories</a></li>
+        </ul>
+        <ul class="nav-links nav-hidden">
+          <li class="nav-link"><a class="nav-item" href="#">Home</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">New</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">Popular</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">Trending</a></li>
+          <li class="nav-link"><a class="nav-item" href="#">Categories</a></li>
+        </ul>
+        <div class="menu-hidden">
+          <img src="./assets/images/icon-menu.svg" alt="icon menu" />
+        </div>
+      </nav>
+      <section id="homepage">
+        <div class="homepage" data-aos="fade-right">
+          <div class="left-image-section">
+            <img
+              class="big-image"
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt="big image"
+            />
+            <div class="read-more">
+              <h2>The Bright Future of Web 3.0?</h2>
+
+              <p>
+                We dive into next evolution of the web that claims to put the
+                power of the platform back into the hands of the people. But it
+                really fulfilling its promise?
+              </p>
+              <button class="btn-read-more">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="new-sections" data-aos="fade-left" data-aos-delay="400">
+          <h2>New</h2>
+          <div class="new-1 new-section">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="new-2 new-section">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="new-3 new-section">
+            <h3>Is VC Funding Drying Up</h3>
+            <p>
+              Private funding by VC firms is Down 50% YOY.We take a look at what
+              that means
+            </p>
+          </div>
+        </div>
+        <div class="small-images">
+          <div class="first-small container" data-aos="fade-up">
+            <img
+              class="small-image"
+              src="./assets/images/image-retro-pcs.jpg"
+              alt=""
+            />
+            <div class="image-text">
+              <h2>01</h2>
+              <h4>Reviving Retro PCs</h4>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div
+            class="second-small container"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              class="small-image"
+              src="./assets/images/image-top-laptops.jpg"
+              alt=""
+            />
+            <div class="image-text">
+              <h2>02</h2>
+              <h4>Top 10 Laptops of 2022</h4>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div
+            class="three-small container"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <img
+              class="small-image"
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+            />
+            <div class="image-text">
+              <h2>03</h2>
+              <h4>The Growth og Gaming</h4>
+              <p>How the pandemic has sparked fresh opportunities</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 600, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
